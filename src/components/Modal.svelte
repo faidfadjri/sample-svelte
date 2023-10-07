@@ -1,5 +1,6 @@
 <script>
-  let show = false;
+  // to make it as prop wrapper
+  export let show = false;
 </script>
 
 <main>
