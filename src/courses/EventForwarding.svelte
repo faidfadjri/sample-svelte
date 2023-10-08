@@ -1,5 +1,5 @@
 <script>
-  import Props from "./courses/Props.svelte";
+  import Props from "./Props.svelte";
 
   let isModalShow = false;
   const toggleModal = () => {
