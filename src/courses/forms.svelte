@@ -1,3 +1,5 @@
+<!-- Bind Groups used for the input value which have the same function -->
+
 <script>
   let firstName;
   let LastName;
