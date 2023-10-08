@@ -1,9 +1,5 @@
 <script>
-  // Type of event modifier
-  // once - makes sure the event can only fire once (removes handler)
-  // preventDefault - prevent the default action (e.g e.preventDefault)
-  // self - only fires the event if the clicked element is the target
-  import EventModifierModal from "./components/EventModifierModal.svelte";
+  import Slots from "./courses/Slots.svelte";
 
   let show = false;
 
@@ -12,4 +8,9 @@
   };
 </script>
 
-<EventModifierModal on:click={toggleModal} {show} message="This is my Modal" />
+<!-- if the state are same just using {show} -->
+<Slots {show} on:click={toggleModal}>
+  <p>This is the HTML code from the parent</p>
+
+  <p slot="spesific-slot">This is a spesific slot defined</p>
+</Slots>
