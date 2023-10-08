@@ -9,5 +9,5 @@
   <br />
 
   <!-- Pass the empty on:click to make the button is expose to the parent -->
-  <button on:click>Show / Hide Modal</button>
+  <button on:click|self>Show / Hide Modal</button>
 </main>
